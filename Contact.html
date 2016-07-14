@@ -21,6 +21,15 @@
   </head>
   <body>
 
+   <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -50,32 +59,39 @@
       </div>
     </nav>
 
+     <div class="contactinfo">
+        <div class="container">
+            <h1>Contact Us</h1>
 
-      <div class="jumbotron">
-      <div class="container">
-        <h1>Welcome to Dental Fillings!</h1>
-        <p>We are New Jersey's leading dental placement agency that has been serving the industy for more than 20 years.</p>
+            <h3>Mailing Address</h3>
+            <p>20 Vanderburg Road 
+            Marlboro, NJ 07746 </p>
+
+            <h3>Telephone</h3>
+             <p>1-800-945-0425</p>
+
+            <h3>Fax</h3>
+            <p>732-294-5613</p> 
+
+            <h3>Email</h3>
+
+            <p>If you represent a dental office and think you'd like to work with us, please drop us a line at <a href="mailto:info@dentalfillings.com"> info@dentalfillings.com </a></p>
+
+
+        </div>
+        </div>
+
+        <div class="container">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3042.2367474528!2d-74.245114!3d40.314903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3d31e3a7051bd%3A0xd6d460e7bbd4e199!2sDental+Fillings!5e0!3m2!1sen!2sus!4v1425523743115" width="800" height="600" frameborder="0" style="border:0"></iframe>
+
+
+
+        </div>
       </div>
     </div>
 
-    <div class="container mission">
-      <img src="images/Dentalfillingslogo.png" alt="Dental Fillings" title="logo" />
-       <p>Whether it's the convenience of our 'round-the-clock' telephone coverage or the appeal of being able to focus on dentistry as we interview and screen candidates, New Jersey's dental industry has relied on Dental Fillings for over two decades.</p>
-      <hr>
-      </div>
-
-    </div>
-    <div class="container reasons">
-      <h2 class="quotes">Dental Fillings is owned and operated by dental professionals.</h2>
-      <h2 class="quotes">Dental Fillings maintains per deim staff as employees and assumes the responsibility for handling all payroll taxes.</h2>
-      <h2 class="quotes">Dental Fillings helps candidates locate employment without a fee.</h2>
-      <h2 class="quotes">Dental Fillings has worked with over two thousand New Jersey dental practices.</h2>
-      <h2 class="quotes">New Jersey's dental industry has relied on Dental Fillings for over two decades.</h2>
-      <h2 class="quotes">Dental practices can focus on dentistry while Dental Fillings finds, interviews, and screens candidates.</h2>
-      <h2 class="quotes">Dental offices and auxillaries alike appreciate our 'round the clock' telephone coverage.</h2>
-      <h2 class="quotes">Dental Fillings is responsible for temporary candidates' taxes, as well as providing Unemployment, Disability and Workman's Compensation Benefits.</h2>
-    </div>
-
+     
      <div class="container">
       <hr>
 
@@ -92,27 +108,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-
-    <script>
-    (function() {
-
-    var quotes = $(".quotes");
-    var quoteIndex = -1;
-
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(2000)
-            .delay(2000)
-            .fadeOut(2000, showNextQuote);
-    }
-
-    showNextQuote();
-
-})();</script>
   
-
-
   </body>
 </html>
